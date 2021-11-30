@@ -55,11 +55,6 @@ android {
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs']
-            if (isBuildModule.toBoolean()) {
-                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
-            } else {
-                manifest.srcFile 'src/main/release/AndroidManifest.xml'
-            }
         }
     }
 
