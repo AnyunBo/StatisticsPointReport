@@ -1,0 +1,41 @@
+ext {
+
+    android = [
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.3",
+            minSdkVersion    : 16,
+            targetSdkVersion : 30,
+            versionCode      :  1000,
+            versionName      : "1.0.0"
+    ]
+
+    version = [
+            gsonVersion        : "2.8.2",
+            lifecycleVersion   : "2.2.0",
+            rxAndroidVersion   : "3.0.0",
+            rxJavaVersion      : "3.1.2",
+            rxLifecycleVersion : "4.0.2",
+    ]
+
+    dependencies = [
+            "gson"                             : "com.google.code.gson:gson:${version["gsonVersion"]}",
+            "lifecycle-extensions"             : "androidx.lifecycle:lifecycle-extensions:${version.lifecycleVersion}",
+            "rxAndroid"                        : "io.reactivex.rxjava3:rxandroid:${version.rxAndroidVersion}",
+            "rxJava"                           : "io.reactivex.rxjava3:rxjava:${version.rxJavaVersion}",
+            "rxLifecycle"                      : "com.trello.rxlifecycle4:rxlifecycle:${version.rxLifecycleVersion}",
+            "rxLifecycle-android"              : "com.trello.rxlifecycle4:rxlifecycle-android:${version.rxLifecycleVersion}",
+            "rxLifecycle-components"           : "com.trello.rxlifecycle4:rxlifecycle-components:${version.rxLifecycleVersion}",
+            "rxLifecycle-components-preference": "com.trello.rxlifecycle4:rxlifecycle-components-preference:${version.rxLifecycleVersion}",
+            "rxLifecycle-android-lifecycle"    : "com.trello.rxlifecycle4:rxlifecycle-android-lifecycle:${version.rxLifecycleVersion}",
+            "rxLifecycle-kotlin"               : "com.trello.rxlifecycle4:rxlifecycle-kotlin:${version.rxLifecycleVersion}",
+            "rxLifecycle-lifecycle-kotlin"     : "com.trello.rxlifecycle4:rxlifecycle-android-lifecycle-kotlin:${version.rxLifecycleVersion}",
+    ]
+
+    sign = [
+            //打包签名
+            KEY_ALIAS        : "pbbStatisticsPoint",
+            KEYSTORE_PASSWORD: "pbb20211130",
+            KEY_PASSWORD     : "pbb20211130"
+    ]
+
+}
