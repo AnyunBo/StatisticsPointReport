@@ -1,0 +1,21 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+apply from:"../common_component_build.gradle"
+
+
+dependencies {
+    api rootProject.ext.dependencies["gson"]
+    // ViewModel and LiveData
+    api rootProject.ext.dependencies["lifecycle-extensions"]
+    api rootProject.ext.dependencies["rxAndroid"]
+    api rootProject.ext.dependencies["rxJava"]
+    api rootProject.ext.dependencies["rxLifecycle"]
+    api rootProject.ext.dependencies["rxLifecycle-android"]
+    api rootProject.ext.dependencies["rxLifecycle-components"]
+    api rootProject.ext.dependencies["rxLifecycle-components-preference"]
+    api rootProject.ext.dependencies["rxLifecycle-android-lifecycle"]
+    api rootProject.ext.dependencies["rxLifecycle-kotlin"]
+    api rootProject.ext.dependencies["rxLifecycle-lifecycle-kotlin"]
+}
