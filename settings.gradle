@@ -1,2 +1,3 @@
 rootProject.name = "StatisticsPointReport"
 include ':app'
+include ':commonutillibrary'
