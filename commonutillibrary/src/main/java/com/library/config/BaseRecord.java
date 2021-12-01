@@ -1,6 +1,4 @@
-package com.library.base;
-
-import com.library.config.StatisticConfig;
+package com.library.config;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
