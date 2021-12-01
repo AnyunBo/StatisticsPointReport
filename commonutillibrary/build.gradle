@@ -6,6 +6,7 @@ apply from:"../common_component_build.gradle"
 
 
 dependencies {
+    api project(':commonbaselibrary')
     api rootProject.ext.dependencies["gson"]
     // ViewModel and LiveData
     api rootProject.ext.dependencies["lifecycle-extensions"]
