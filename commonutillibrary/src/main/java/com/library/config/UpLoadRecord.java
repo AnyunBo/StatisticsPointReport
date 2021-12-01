@@ -2,7 +2,6 @@ package com.library.config;
 
 import android.text.TextUtils;
 
-import com.library.base.BaseRecord;
 import common.library.app.StatisticApplication;
 
 import java.util.Map;

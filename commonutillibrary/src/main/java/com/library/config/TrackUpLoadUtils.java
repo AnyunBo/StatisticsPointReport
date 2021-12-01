@@ -1,9 +1,8 @@
-package com.library.util;
+package com.library.config;
 
 import android.content.Context;
 
 import common.library.app.StatisticApplication;
-import com.library.config.UpLoadRecord;
 
 /**
  * 数据上报工具类
