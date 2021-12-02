@@ -2,6 +2,8 @@ package com.library.config;
 
 import android.text.TextUtils;
 
+import com.library.upload.UsageEventUploadManger;
+
 import common.library.app.StatisticApplication;
 
 import java.util.Map;
@@ -36,6 +38,9 @@ public class UpLoadRecord extends BaseRecord {
             }
         }
         String usageEventString = buffer.toString();
+        if (!TextUtils.isEmpty(usageEventString)) {
+            UsageEventUploadManger.INSTANCE.collect(usageEventString, buriedPointName);
+        }
     }
 
 }
