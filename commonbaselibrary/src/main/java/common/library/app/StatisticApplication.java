@@ -1,7 +1,7 @@
 package common.library.app;
 
+import common.library.BuildConfig;
 import common.library.base.BaseApplication;
-import com.library.base.BuildConfig;
 
 public class StatisticApplication extends BaseApplication {
 

@@ -16,6 +16,8 @@ ext {
             rxAndroidVersion  : "3.0.0",
             rxJavaVersion     : "3.1.2",
             rxLifecycleVersion: "4.0.2",
+            okhttp3Version    : "4.9.3",
+            eventbusVersion   : "3.2.0",
     ]
 
     dependencies = [
@@ -31,6 +33,8 @@ ext {
             "rxLifecycle-android-lifecycle"    : "com.trello.rxlifecycle4:rxlifecycle-android-lifecycle:${version.rxLifecycleVersion}",
             "rxLifecycle-kotlin"               : "com.trello.rxlifecycle4:rxlifecycle-kotlin:${version.rxLifecycleVersion}",
             "rxLifecycle-lifecycle-kotlin"     : "com.trello.rxlifecycle4:rxlifecycle-android-lifecycle-kotlin:${version.rxLifecycleVersion}",
+            "okhttp3"                          : "com.squareup.okhttp3:okhttp:${version.okhttp3Version}",
+            "eventbus"                         : "org.greenrobot:eventbus:${version.eventbusVersion}",
     ]
 
     sign = [
