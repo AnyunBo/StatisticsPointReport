@@ -1,11 +1,26 @@
 package common.library.base;
 
+import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 
 import androidx.multidex.MultiDexApplication;
 
+import common.library.support.AppContextHolder;
+
 public class BaseApplication extends MultiDexApplication {
+
+    /**
+     * 这里会在 {@link BaseApplication#onCreate} 之前被调用,可以做一些较早的初始化
+     * 常用于 MultiDex 以及插件化框架的初始化
+     *
+     * @param base
+     */
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        AppContextHolder.INSTANCE.updateAppBaseContext(base);
+    }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
