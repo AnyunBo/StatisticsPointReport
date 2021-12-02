@@ -2,7 +2,7 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
 }
-apply from:"../common_component_build.gradle"
+apply from: "../common_component_build.gradle"
 
 
 dependencies {
@@ -19,4 +19,6 @@ dependencies {
     api rootProject.ext.dependencies["rxLifecycle-android-lifecycle"]
     api rootProject.ext.dependencies["rxLifecycle-kotlin"]
     api rootProject.ext.dependencies["rxLifecycle-lifecycle-kotlin"]
+    api rootProject.ext.dependencies["okhttp3"]
+    api rootProject.ext.dependencies["eventbus"]
 }
