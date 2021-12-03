@@ -1,4 +1,4 @@
 rootProject.name = "StatisticsPointReport"
 include ':app'
-include ':commonutillibrary'
-include ':commonbaselibrary'
+include ':utillibrary'
+include ':baselibrary'
